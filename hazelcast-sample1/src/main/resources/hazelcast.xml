@@ -1,0 +1,23 @@
+<hazelcast
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.hazelcast.com/schema/config
+                               http://www.hazelcast.com/schema/config/hazelcast-config-3.6.xsd"
+	xmlns="http://www.hazelcast.com/schema/config">
+
+	<group>
+		<name>HazelCast1Cluster</name>
+		<password>HazelCast1Cluster</password>
+	</group>
+	
+	<!-- <network>
+    <join>
+        <multicast enabled="true">
+            <multicast-group>224.2.2.4</multicast-group>
+            <multicast-port>34466</multicast-port>
+            <multicast-time-to-live>64</multicast-time-to-live>
+            <multicast-timeout-seconds>2</multicast-timeout-seconds>
+        </multicast>
+    </join>
+</network> -->
+
+</hazelcast>
