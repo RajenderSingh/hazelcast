@@ -1,0 +1,25 @@
+<hazelcast
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.hazelcast.com/schema/config
+                               http://www.hazelcast.com/schema/config/hazelcast-config-3.6.xsd"
+	xmlns="http://www.hazelcast.com/schema/config">
+
+	<group>
+		<name>HazelCast3Cluster</name>
+		<password>HazelCast3Cluster</password>
+	</group>
+	
+	<network>
+	    <join>
+	        <multicast enabled="false">
+	            <multicast-group>224.2.2.4</multicast-group>
+	            <multicast-port>54327</multicast-port>	            
+	        </multicast>
+	        <tcp-ip enabled="true">
+                <member>xx.xx.xx.xx:5701</member>
+                <member>xx.xx.xx.xx:5702</member>
+            </tcp-ip>
+	    </join>
+	</network>
+
+</hazelcast>
